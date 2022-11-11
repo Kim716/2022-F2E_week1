@@ -145,6 +145,17 @@ body {
   }
 }
 
+@media (max-width: 700px) {
+  .logo {
+    width: 50%;
+  }
+  .nav-bar .btn-sign-up {
+    font-size: 1.3rem;
+    margin-right: 10px;
+    padding: 10px 20px;
+  }
+}
+
 /* 主軸 */
 
 .container {
@@ -213,15 +224,25 @@ body {
 }
 
 .page-2-genie1 {
-  top: 12%;
+  top: 13%;
 }
 
 .page-2-genie2 {
-  top: 35%;
+  top: 36%;
 }
 
 .page-2-genie3 {
   top: 58%;
+}
+
+@media (max-width: 700px) {
+  .page-2 h3 {
+    font-size: 2rem;
+  }
+
+  .page-2 p {
+    font-size: 1rem;
+  }
 }
 
 /* 第三頁 */
@@ -233,6 +254,12 @@ body {
 .page-3 h3 {
   text-align: center;
   font-size: 3rem;
+}
+
+@media (max-width: 700px) {
+  .page-3 h3 {
+    font-size: 2rem;
+  }
 }
 
 /* 第四頁 */
@@ -250,7 +277,13 @@ body {
   width: 85%;
 }
 
-.page-4 p {
+.page-4-title {
+  position: absolute;
+  top: 27%;
+  height: 47%;
+}
+
+/* .page-4 p {
   -webkit-writing-mode: vertical-lr;
   writing-mode: vertical-lr;
   height: 400px;
@@ -261,7 +294,7 @@ body {
   font-weight: 300;
   text-align: center;
   color: #fff;
-}
+} */
 
 .page-4-genie1 {
   position: absolute;
@@ -280,19 +313,21 @@ body {
 /* 第五頁 */
 
 .page-5 {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 60px;
 }
 
 .page-5-title {
-  font-size: 32px;
+  font-size: 3rem;
   line-height: 39px;
-  margin: 88px 0 16px;
+  margin: 88px 0 20px;
 }
 
 .page-5-subtitle {
-  font-size: 24px;
+  font-size: 2.5rem;
   line-height: 29px;
   margin-bottom: 48px;
 }
@@ -371,6 +406,38 @@ body {
   text-align: center;
   font-size: 14px;
   padding: 16px;
+}
+
+@media (max-width: 1100px) {
+  .cards {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 900px) {
+  .page-5-title {
+    font-size: 2.5rem;
+    line-height: 30px;
+    margin: 88px 0 15px;
+  }
+  .page-5-subtitle {
+    font-size: 1.7rem;
+    line-height: 20px;
+    margin-bottom: 48px;
+  }
+}
+
+@media (max-width: 700px) {
+  .page-5-title {
+    font-size: 2rem;
+    line-height: 30px;
+    margin: 88px 0 15px;
+  }
+  .page-5-subtitle {
+    font-size: 1rem;
+    line-height: 20px;
+    margin-bottom: 48px;
+  }
 }
 
 /* 第六頁 */
