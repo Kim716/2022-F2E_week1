@@ -2,14 +2,465 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-weight: 400;
+  letter-spacing: 0.065em;
 }
+
+/* .box {
+  width: 50px;
+  height: 50px;
+  background-color: #895cdd;
+} */
 
 body {
   width: 100vw;
   height: 100vh;
+  font-family: "Inter", "PingFang", Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  background: #fff;
 }
 
+/* 導航列 */
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  padding: 24px 72px;
+  width: 100%;
+  background: #fff;
+}
+
+.bar-1 {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 32px;
+}
+
+.nav-bar a {
+  margin-right: 40px;
+  text-decoration: none;
+  color: #6029f5;
+}
+
+.nav-bar a:hover {
+  color: #e335ff;
+}
+
+.bar-2 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.bar-2 .btn {
+  background: #f8cc46;
+  border-radius: 100px;
+  border: none;
+  padding: 16px 40px;
+  margin-left: 32px;
+
+  /* word */
+
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.065em;
+}
+
+.bar-2 .btn:hover {
+  outline: 8px solid #ffe79e;
+  border-radius: 100px;
+  /* 要怎麼做到不讓他動來動去 */
+}
+
+/* 主軸 */
+
 .container {
-  margin: 24px 72px 24px;
+  margin: 120px 72px 24px;
   border: 1px solid #e335ff;
+}
+
+/* 第一頁 */
+
+.page-1 {
+  position: relative;
+}
+
+.page-1 .page-1-back {
+  width: 100%;
+}
+
+.page-1 .page-1-genie {
+  position: absolute;
+  top: 25%;
+  left: 6%;
+}
+
+.page-1 .page-1-title {
+  position: absolute;
+  top: 65%;
+  left: 42%;
+
+  font-size: 48px;
+  color: #6029f5;
+}
+
+/* 第二頁 */
+
+.page-2 {
+  position: relative;
+  background: #fdf7e8;
+  height: 500px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.page-2 h3 {
+  font-size: 32px;
+}
+
+.page-2 p {
+  background: #fff;
+  width: 60%;
+  border: 1px solid #e335ff;
+  border-radius: 10px;
+  padding: 12px 0 15px 0;
+
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.page-2-img {
+  position: absolute;
+  left: 21%;
+}
+
+.page-2-genie1 {
+  top: 8%;
+}
+
+.page-2-genie2 {
+  top: 33%;
+}
+
+.page-2-genie3 {
+  top: 57%;
+}
+
+/* 第三頁 */
+
+.page-3 {
+  /* border: 3px solid tomato; */
+  margin-top: 88px;
+}
+
+.page-3 h3 {
+  text-align: center;
+  font-size: 32px;
+}
+
+/* 第四頁 */
+
+.page-4 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  /* height: 940px;
+  background-image: url("image/大螢幕 ( 桌機 )/4-l-a.png");
+  background-repeat: no-repeat;
+  background-position: center; */
+}
+
+.page-4-back {
+  margin: 50px;
+}
+
+.page-4 p {
+  -webkit-writing-mode: vertical-lr;
+  writing-mode: vertical-lr;
+  height: 400px;
+  position: absolute;
+  top: 28%;
+  left: 49%;
+  font-size: 48px;
+  font-weight: 300;
+  text-align: center;
+  color: #fff;
+}
+
+.page-4-genie1 {
+  position: absolute;
+  top: 35%;
+  left: 10%;
+  /* width: 100%; */
+}
+
+.page-4-genie2 {
+  position: absolute;
+  top: 35%;
+  left: 62%;
+}
+
+/* 第五頁 */
+
+.page-5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-5-title {
+  font-size: 32px;
+  line-height: 39px;
+  margin: 88px 0 16px;
+}
+
+.page-5-subtitle {
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 48px;
+}
+
+.cards {
+  display: flex;
+  margin-bottom: 88px;
+}
+
+.cards img {
+  border-radius: 20px 20px 0 0;
+}
+
+.card-1,
+.card-2,
+.card-3 {
+  margin: 10px;
+  border: 1px solid #e335ff;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-buttons {
+  width: 100%;
+  margin-top: 24px;
+  padding-left: 30px;
+}
+
+.card-1-week,
+.card-2-week,
+.card-3-week {
+  background: #fff;
+  padding: 9px 24px;
+  border: 1px solid #f8cc46;
+}
+
+.card-2-week {
+  border: 1px solid #79eaee;
+}
+
+.card-3-week {
+  border: 1px solid #895cdd;
+}
+
+.card-1-topic,
+.card-2-topic,
+.card-3-topic {
+  background: #f8cc46;
+  height: 100%;
+  padding: 8px 24px;
+  border: none;
+  margin-left: 10px;
+}
+
+.card-2-topic {
+  background: #79eaee;
+}
+
+.card-3-topic {
+  background: #895cdd;
+  color: #fff;
+}
+
+.card-topic-name {
+  width: 100%;
+  margin: 24px 0;
+  padding-left: 30px;
+  font-size: 20px;
+}
+
+.card-sponser {
+  width: 100%;
+  border-top: 1px solid #e335ff;
+  text-align: center;
+  font-size: 14px;
+  padding: 16px;
+}
+
+/* 第六頁 */
+.page-6 {
+  background: #fdf7e8;
+  height: 922px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page-6-title {
+  margin-top: 88px;
+  margin-bottom: 32px;
+  font-size: 32px;
+  line-height: 39px;
+}
+.buttons {
+  font-size: 0;
+}
+
+.page-6-btn1,
+.page-6-btn2 {
+  border: none;
+  font-size: 24px;
+  line-height: 29px;
+  padding: 20px 218px;
+  cursor: pointer;
+}
+
+.page-6-btn1 {
+  background: #fff;
+}
+
+.page-6-btn2 {
+  background: #fdf7e8;
+}
+
+.page-6-img1 {
+  display: block;
+}
+
+.page-6-img2 {
+  display: none;
+}
+
+/* 第七頁 */
+.page-7 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.page-7-back {
+  width: 100%;
+}
+
+.page-7-title {
+  position: absolute;
+  top: 88px;
+  font-size: 32px;
+  line-height: 39px;
+}
+
+.page-7-subtitle {
+  position: absolute;
+  top: 143px;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.rules,
+.price {
+  position: absolute;
+  top: 220px;
+  left: 100px;
+  border: 1px solid #e335ff;
+  border-radius: 30px;
+  background: #fff;
+  padding: 40px 32px;
+  width: 526px;
+  height: 307px;
+}
+
+.price {
+  width: 550px;
+  height: 382.26px;
+  top: 220px;
+  left: 680px;
+}
+
+.rules-title,
+.price-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.rules-description,
+.price-description {
+  padding-left: 1.5em;
+  position: absolute;
+  width: 462px;
+  height: 174px;
+  left: 32px;
+  top: 93px;
+}
+.rules-description li,
+.price-description li {
+  letter-spacing: 0.16em;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  text-align: justify;
+  margin-bottom: 1em;
+}
+
+.purple-price {
+  color: #6029f5;
+}
+
+.smaller-price {
+  display: block;
+  font-size: 16px;
+  line-height: 200%;
+}
+
+.polygon1 {
+  /* width: 400px;
+  height: 200px;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 25% 75%, 30% 80%, 35% 83%);
+  background: #79eaee; */
+}
+
+.page-7-genie1 {
+  position: absolute;
+  top: 70%;
+  left: 13%;
+}
+
+.page-7-genie2 {
+  position: absolute;
+  top: 74%;
+  left: 68%;
+}
+
+/* 第八頁 */
+.page-8-back {
+  width: 100%;
+}
+
+.half-circle {
+  height: 1200px;
+  background: #fff;
+  border: 1px solid #e335ff;
+  border-radius: 70% 70% 0 0;
 }
