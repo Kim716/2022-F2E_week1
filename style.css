@@ -502,70 +502,67 @@ body {
   flex-direction: column;
   align-items: center;
   position: relative;
+  width: 100%;
 }
 
 .page-7-back {
+  position: absolute;
+  z-index: -1;
   width: 100%;
 }
 
 .page-7-title {
-  position: absolute;
-  top: 88px;
-  font-size: 32px;
-  line-height: 39px;
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-top: 88px;
 }
 
 .page-7-subtitle {
-  position: absolute;
-  top: 143px;
-  font-size: 24px;
+  font-size: 2.5rem;
   line-height: 29px;
+  margin-top: 20px;
+}
+
+.rule-and-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 90%;
+  margin-top: 40px;
+  margin-bottom: 150px;
+}
+
+.genie-talking-rule,
+.genie-talking-price {
+  width: 48%;
+  text-align: center;
 }
 
 .rules,
 .price {
-  position: absolute;
-  top: 220px;
-  left: 100px;
   border: 1px solid #e335ff;
   border-radius: 30px;
   background: #fff;
   padding: 40px 32px;
-  width: 526px;
-  height: 307px;
-}
-
-.price {
-  width: 550px;
-  height: 382.26px;
-  top: 220px;
-  left: 680px;
+  /* width: 48%; */
 }
 
 .rules-title,
 .price-title {
   font-weight: 600;
-  font-size: 24px;
-  line-height: 29px;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
 }
 
 .rules-description,
 .price-description {
   padding-left: 1.5em;
-  position: absolute;
-  width: 462px;
-  height: 174px;
-  left: 32px;
-  top: 93px;
 }
 .rules-description li,
 .price-description li {
-  letter-spacing: 0.16em;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 120%;
+  font-size: 2rem;
   text-align: justify;
-  margin-bottom: 1em;
+  margin-bottom: 15px;
 }
 
 .purple-price {
@@ -586,15 +583,33 @@ body {
 /* } */
 
 .page-7-genie1 {
-  position: absolute;
-  top: 70%;
-  left: 13%;
+  width: 30%;
+  margin-top: 40px;
 }
 
 .page-7-genie2 {
-  position: absolute;
-  top: 74%;
-  left: 68%;
+  width: 30%;
+}
+
+@media (max-width: 1100px) {
+  .rule-and-price {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .genie-talking-rule,
+  .genie-talking-price {
+    width: 80%;
+  }
+
+  .page-7-genie1 {
+    margin-top: 20px;
+    width: 20%;
+  }
+
+  .page-7-genie2 {
+    width: 20%;
+  }
 }
 
 /* 第八頁 */
