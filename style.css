@@ -443,45 +443,58 @@ body {
 /* 第六頁 */
 .page-6 {
   background: #fdf7e8;
-  height: 922px;
+  /* height: 922px; */
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 90px;
 }
 .page-6-title {
   margin-top: 88px;
   margin-bottom: 32px;
-  font-size: 32px;
+  font-size: 3rem;
   line-height: 39px;
 }
 .buttons {
   font-size: 0;
+  width: 80%;
 }
 
 .page-6-btn1,
 .page-6-btn2 {
   border: none;
-  font-size: 24px;
+  display: inline-block;
+  font-size: 2.3rem;
   line-height: 29px;
-  padding: 20px 218px;
+  width: 50%;
+  padding: 20px 0;
   cursor: pointer;
 }
 
-.page-6-btn1 {
+.page-6-img1,
+.page-6-img2 {
+  width: 80%;
+}
+
+.white-background {
   background: #fff;
 }
 
-.page-6-btn2 {
+.yellow-background {
   background: #fdf7e8;
 }
 
-.page-6-img1 {
+.close {
+  display: none;
+}
+
+/* .page-6-img1 {
   display: block;
 }
 
 .page-6-img2 {
-  display: none;
-}
+  display: block;
+} */
 
 /* 第七頁 */
 .page-7 {
