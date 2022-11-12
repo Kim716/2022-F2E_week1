@@ -1,5 +1,5 @@
 "use strict";
-// gsap.registerPlugin(ScrollTrigger, TextPlugin);
+gsap.registerPlugin(ScrollTrigger, TextPlugin);
 
 const bars = document.querySelector(".fa-bars");
 const bar2 = document.querySelector(".bar-2");
@@ -27,3 +27,8 @@ page6Btn2.addEventListener("click", (e) => {
   e.target.classList.remove("yellow-background");
   page6Btn1.classList.add("yellow-background");
 });
+
+// 要動的物件 p1
+
+gsap.to(".page-1-genie", { y: 80, duration: 1.5 });
+gsap.to(".page-1-genie", { x: 100, duration: 1.5, delay: 1.5 });
