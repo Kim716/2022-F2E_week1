@@ -28,7 +28,61 @@ page6Btn2.addEventListener("click", (e) => {
   page6Btn1.classList.add("yellow-background");
 });
 
-// 要動的物件 p1
+// Animation p1
+const tl1 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".page-1-genie",
+    markers: false,
+    start: "top 38%",
+    end: "top 10%",
+    scrub: true,
+  },
+});
 
-gsap.to(".page-1-genie", { y: 80, duration: 1.5 });
-gsap.to(".page-1-genie", { x: 100, duration: 1.5, delay: 1.5 });
+if (window.screen.width < 1000) {
+  tl1
+    .to(".page-1-genie", {
+      top: "40%",
+    })
+    .to(".page-1-genie", {
+      left: "20%",
+    });
+} else {
+  tl1
+    .to(".page-1-genie", {
+      top: "40%",
+    })
+    .to(".page-1-genie", {
+      left: "25%",
+    });
+}
+
+// Animation p2
+gsap.to(".page-2-q1", {
+  text: "羨慕別人的酷酷網頁動畫？",
+  duration: 1.5,
+  scrollTrigger: {
+    trigger: ".page-2-q1",
+    toggleActions: "play pause resume reset",
+  },
+});
+
+gsap.to(".page-2-q2", {
+  text: "滿足不了同事的許願？",
+  duration: 1.5,
+  delay: 1.5,
+  scrollTrigger: {
+    trigger: ".page-2-q2",
+    toggleActions: "play pause resume reset",
+  },
+});
+
+gsap.to(".page-2-q3", {
+  text: "動畫技能樹太雜無從下手？",
+  duration: 1.5,
+  delay: 3,
+  scrollTrigger: {
+    trigger: ".page-2-q3",
+    toggleActions: "play pause resume reset",
+  },
+});
