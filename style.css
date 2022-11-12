@@ -182,7 +182,11 @@ body {
   width: 100%;
 }
 
-.page-1 .page-1-back {
+.page-1 .page-1-back1 {
+  width: 100%;
+}
+.page-1 .page-1-back2 {
+  display: none;
   width: 100%;
 }
 
@@ -198,6 +202,28 @@ body {
   top: 63%;
   left: 41%;
   width: 50%;
+}
+
+@media (max-width: 1000px) {
+  .page-1 .page-1-back1 {
+    display: none;
+    width: 100%;
+  }
+  .page-1 .page-1-back2 {
+    display: block;
+    width: 100%;
+  }
+  .page-1 .page-1-genie {
+    top: 27%;
+    left: 3%;
+    height: 24%;
+  }
+
+  .page-1 .page-1-title {
+    top: 70%;
+    left: 32%;
+    width: 60%;
+  }
 }
 
 /* 第二頁 */
