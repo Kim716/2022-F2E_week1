@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-weight: 400;
   letter-spacing: 0.1em;
+  line-height: 1.5;
 }
 
 img {
@@ -15,11 +16,22 @@ html {
   font-size: 10px;
 }
 
+@media (max-width: 1000px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 700px) {
+  html {
+    font-size: 7px;
+  }
+}
+
 body {
   width: 100vw;
   height: 100vh;
   font-family: "Inter", "PingFang", Arial, Helvetica, sans-serif;
-  line-height: 1.5;
   background: #fff;
 }
 
@@ -150,7 +162,6 @@ body {
     width: 50%;
   }
   .nav-bar .btn-sign-up {
-    font-size: 1.3rem;
     margin-right: 10px;
     padding: 10px 20px;
   }
@@ -235,16 +246,6 @@ body {
   top: 58%;
 }
 
-@media (max-width: 700px) {
-  .page-2 h3 {
-    font-size: 2rem;
-  }
-
-  .page-2 p {
-    font-size: 1rem;
-  }
-}
-
 /* 第三頁 */
 
 .page-3 {
@@ -254,12 +255,6 @@ body {
 .page-3 h3 {
   text-align: center;
   font-size: 3rem;
-}
-
-@media (max-width: 700px) {
-  .page-3 h3 {
-    font-size: 2rem;
-  }
 }
 
 /* 第四頁 */
@@ -322,14 +317,14 @@ body {
 
 .page-5-title {
   font-size: 3rem;
-  line-height: 39px;
-  margin: 88px 0 20px;
+  line-height: 4rem;
+  margin: 8rem 0 2rem;
 }
 
 .page-5-subtitle {
   font-size: 2.5rem;
-  line-height: 29px;
-  margin-bottom: 48px;
+  line-height: 3rem;
+  margin-bottom: 5rem;
 }
 
 .cards {
@@ -364,6 +359,7 @@ body {
   background: #fff;
   padding: 9px 24px;
   border: 1px solid #f8cc46;
+  /* font-size: 1.5rem; */
 }
 
 .card-2-week {
@@ -382,6 +378,7 @@ body {
   padding: 8px 24px;
   border: none;
   margin-left: 10px;
+  /* font-size: 1.5rem; */
 }
 
 .card-2-topic {
@@ -397,14 +394,14 @@ body {
   width: 100%;
   margin: 24px 0;
   padding-left: 30px;
-  font-size: 20px;
+  font-size: 2rem;
 }
 
 .card-sponser {
   width: 100%;
   border-top: 1px solid #e335ff;
   text-align: center;
-  font-size: 14px;
+  font-size: 1.5rem;
   padding: 16px;
 }
 
@@ -414,29 +411,12 @@ body {
   }
 }
 
-@media (max-width: 900px) {
-  .page-5-title {
-    font-size: 2.5rem;
-    line-height: 30px;
-    margin: 88px 0 15px;
-  }
-  .page-5-subtitle {
-    font-size: 1.7rem;
-    line-height: 20px;
-    margin-bottom: 48px;
-  }
-}
-
 @media (max-width: 700px) {
-  .page-5-title {
-    font-size: 2rem;
-    line-height: 30px;
-    margin: 88px 0 15px;
+  .card-topic-name {
+    font-size: 2.5rem;
   }
   .page-5-subtitle {
-    font-size: 1rem;
-    line-height: 20px;
-    margin-bottom: 48px;
+    font-size: 2rem;
   }
 }
 
@@ -465,9 +445,8 @@ body {
   border: none;
   display: inline-block;
   font-size: 2.3rem;
-  line-height: 29px;
   width: 50%;
-  padding: 20px 0;
+  padding: 2rem 0;
   cursor: pointer;
 }
 
@@ -488,14 +467,6 @@ body {
   display: none;
 }
 
-/* .page-6-img1 {
-  display: block;
-}
-
-.page-6-img2 {
-  display: block;
-} */
-
 /* 第七頁 */
 .page-7 {
   display: flex;
@@ -514,13 +485,13 @@ body {
 .page-7-title {
   font-size: 3rem;
   line-height: 1.2;
-  margin-top: 88px;
+  margin-top: 8.5rem;
 }
 
 .page-7-subtitle {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   line-height: 29px;
-  margin-top: 20px;
+  margin-top: 2rem;
 }
 
 .rule-and-price {
@@ -528,8 +499,8 @@ body {
   justify-content: space-between;
   align-items: flex-start;
   width: 90%;
-  margin-top: 40px;
-  margin-bottom: 150px;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
 }
 
 .genie-talking-rule,
@@ -543,7 +514,7 @@ body {
   border: 1px solid #e335ff;
   border-radius: 30px;
   background: #fff;
-  padding: 40px 32px;
+  padding: 4rem 3rem;
   /* width: 48%; */
 }
 
@@ -551,7 +522,7 @@ body {
 .price-title {
   font-weight: 600;
   font-size: 2.5rem;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
 }
 
 .rules-description,
@@ -560,7 +531,7 @@ body {
 }
 .rules-description li,
 .price-description li {
-  font-size: 2rem;
+  font-size: 1.8rem;
   text-align: justify;
   margin-bottom: 15px;
 }
@@ -614,41 +585,9 @@ body {
 }
 
 @media (max-width: 700px) {
-  .page-7-title {
-    font-size: 2.5rem;
-    line-height: 1.2;
-    margin-top: 88px;
-  }
-
-  .page-7-subtitle {
-    font-size: 2rem;
-    line-height: 29px;
-    margin-top: 20px;
-  }
-
-  .rules-title,
-  .price-title {
-    font-weight: 600;
-    font-size: 2rem;
-  }
-
-  .rules-description,
-  .price-description {
-    padding-left: 1.5em;
-  }
-  .rules-description li,
-  .price-description li {
-    font-size: 1.5rem;
-  }
-
   .purple-price {
     display: block;
     line-height: 2;
-  }
-
-  .smaller-price {
-    font-size: 1rem;
-    letter-spacing: 0;
   }
 }
 
@@ -662,6 +601,7 @@ body {
 }
 .page-8-back {
   width: 100%;
+  margin-bottom: 8rem;
 }
 
 /* .half-circle {
@@ -709,8 +649,7 @@ body {
 .inside-circle-container p {
   font-size: 2.5rem;
   line-height: 29px;
-  letter-spacing: 0.1em;
-  margin-bottom: 30px;
+  margin-bottom: 3rem;
 }
 
 .page-8-btn {
@@ -719,37 +658,29 @@ body {
 
 @media (max-width: 1100px) {
   .inside-circle-container h3 {
-    font-size: 2.5rem;
     line-height: 35px;
   }
 
   .inside-circle-container p {
-    font-size: 2rem;
     margin-bottom: 20px;
   }
 
   .page-8-btn {
     padding: 10px 30px;
-    /* word */
-    font-size: 1.5rem;
   }
 }
 
 @media (max-width: 850px) {
   .inside-circle-container h3 {
-    font-size: 2rem;
     line-height: 15px;
   }
 
   .inside-circle-container p {
-    font-size: 1.5rem;
     margin-bottom: 10px;
   }
 
   .page-8-btn {
     padding: 5px 25px;
-    /* word */
-    font-size: 1.2rem;
   }
 
   .page-8-btn:hover {
@@ -760,7 +691,7 @@ body {
 /* 第九頁 */
 .page-9 {
   background: #fdf7e8;
-  padding: 88px 110px;
+  padding: 8.5rem 110px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -785,7 +716,7 @@ body {
 
 @media (max-width: 1100px) {
   .page-9 {
-    padding: 88px 20px;
+    padding: 8.5rem 20px;
   }
 }
 
@@ -801,15 +732,9 @@ body {
   text-align: center;
 }
 
-@media (max-width: 1000px) {
-  .page-10 p {
-    font-size: 1.5rem;
-  }
-}
-
 @media (max-width: 700px) {
   .page-10 p {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 }
 
