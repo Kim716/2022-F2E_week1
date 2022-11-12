@@ -571,7 +571,7 @@ body {
 
 .smaller-price {
   display: block;
-  font-size: 16px;
+  font-size: 1.5rem;
   line-height: 200%;
 }
 
@@ -608,13 +608,57 @@ body {
   }
 
   .page-7-genie2 {
+    margin-top: 20px;
     width: 20%;
+  }
+}
+
+@media (max-width: 700px) {
+  .page-7-title {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-top: 88px;
+  }
+
+  .page-7-subtitle {
+    font-size: 2rem;
+    line-height: 29px;
+    margin-top: 20px;
+  }
+
+  .rules-title,
+  .price-title {
+    font-weight: 600;
+    font-size: 2rem;
+  }
+
+  .rules-description,
+  .price-description {
+    padding-left: 1.5em;
+  }
+  .rules-description li,
+  .price-description li {
+    font-size: 1.5rem;
+  }
+
+  .purple-price {
+    display: block;
+    line-height: 2;
+  }
+
+  .smaller-price {
+    font-size: 1rem;
+    letter-spacing: 0;
   }
 }
 
 /* 第八頁 */
 .page-8 {
   position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .page-8-back {
   width: 100%;
@@ -641,14 +685,14 @@ body {
 
 .star {
   position: absolute;
-  left: 49%;
-  top: 10%;
+  left: 48.5%;
+  top: 9%;
+  width: 5%;
 }
 
 .inside-circle-container {
   position: absolute;
   top: 50%;
-  left: 32%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -656,19 +700,63 @@ body {
 
 .inside-circle-container h3 {
   font-weight: 600;
-  font-size: 36px;
+  font-size: 3.5rem;
   line-height: 44px;
   letter-spacing: 0.2em;
   margin-bottom: 12px;
 }
 
 .inside-circle-container p {
-  font-size: 24px;
+  font-size: 2.5rem;
   line-height: 29px;
   letter-spacing: 0.1em;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
+.page-8-btn {
+  margin-left: 0;
+}
+
+@media (max-width: 1100px) {
+  .inside-circle-container h3 {
+    font-size: 2.5rem;
+    line-height: 35px;
+  }
+
+  .inside-circle-container p {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .page-8-btn {
+    padding: 10px 30px;
+    /* word */
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 850px) {
+  .inside-circle-container h3 {
+    font-size: 2rem;
+    line-height: 15px;
+  }
+
+  .inside-circle-container p {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .page-8-btn {
+    padding: 5px 25px;
+    /* word */
+    font-size: 1.2rem;
+  }
+
+  .page-8-btn:hover {
+    /* 使用 border 會移動到，outline 不會讓他動來動去 */
+    outline: 5px solid #ffe79e;
+  }
+}
 /* 第九頁 */
 .page-9 {
   background: #fdf7e8;
