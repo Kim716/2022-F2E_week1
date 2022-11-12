@@ -673,14 +673,12 @@ body {
 .inside-circle-container h3 {
   font-weight: 600;
   font-size: 3.5rem;
-  line-height: 44px;
   letter-spacing: 0.2em;
   margin-bottom: 12px;
 }
 
 .inside-circle-container p {
   font-size: 2.5rem;
-  line-height: 29px;
   margin-bottom: 3rem;
 }
 
@@ -689,14 +687,6 @@ body {
 }
 
 @media (max-width: 1100px) {
-  .inside-circle-container h3 {
-    line-height: 35px;
-  }
-
-  .inside-circle-container p {
-    margin-bottom: 20px;
-  }
-
   .page-8-btn {
     padding: 10px 30px;
   }
@@ -704,6 +694,7 @@ body {
 
 @media (max-width: 850px) {
   .inside-circle-container h3 {
+    font-size: 3rem;
     line-height: 15px;
   }
 
