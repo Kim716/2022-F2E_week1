@@ -761,10 +761,12 @@ body {
 .page-9 {
   background: #fdf7e8;
   padding: 88px 110px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 .page-9 h3 {
-  font-size: 32px;
-  line-height: 39px;
+  font-size: 3rem;
   text-align: center;
   margin-bottom: 32px;
 }
@@ -778,6 +780,13 @@ body {
   border: 1px solid #e335ff;
   border-radius: 20px;
   padding: 32px 0;
+  width: 31%;
+}
+
+@media (max-width: 1100px) {
+  .page-9 {
+    padding: 88px 20px;
+  }
 }
 
 /* 第十頁 */
@@ -787,9 +796,21 @@ body {
 }
 
 .page-10 p {
-  font-size: 20px;
+  font-size: 2rem;
   line-height: 24px;
   text-align: center;
+}
+
+@media (max-width: 1000px) {
+  .page-10 p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .page-10 p {
+    font-size: 1rem;
+  }
 }
 
 .page-11 {
