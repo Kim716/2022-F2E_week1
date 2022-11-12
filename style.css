@@ -5,6 +5,7 @@
   font-weight: 400;
   letter-spacing: 0.1em;
   line-height: 1.5;
+  color: black;
 }
 
 img {
@@ -50,7 +51,7 @@ body {
   /* 樣式、其他 */
   width: 100%;
   background: #fff;
-  padding: 24px 72px;
+  padding: 2rem 5rem;
 }
 
 .bar-2 {
@@ -170,7 +171,7 @@ body {
 /* 主軸 */
 
 .container {
-  margin: 120px 72px 24px;
+  margin: 13rem 5rem 2.5rem;
   border: 1px solid #e335ff;
 }
 
@@ -427,17 +428,16 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 90px;
+  padding-bottom: 9rem;
 }
 .page-6-title {
-  margin-top: 88px;
-  margin-bottom: 32px;
+  margin-top: 8.5rem;
+  margin-bottom: 3rem;
   font-size: 3rem;
-  line-height: 39px;
 }
 .buttons {
   font-size: 0;
-  width: 80%;
+  width: 85%;
 }
 
 .page-6-btn1,
@@ -452,7 +452,7 @@ body {
 
 .page-6-img1,
 .page-6-img2 {
-  width: 80%;
+  width: 85%;
 }
 
 .white-background {
@@ -465,6 +465,12 @@ body {
 
 .close {
   display: none;
+}
+
+@media (max-width: 700px) {
+  .page-6-title {
+    margin-top: 4rem;
+  }
 }
 
 /* 第七頁 */
@@ -699,7 +705,7 @@ body {
 .page-9 h3 {
   font-size: 3rem;
   text-align: center;
-  margin-bottom: 32px;
+  margin-bottom: 3rem;
 }
 
 .sponsers {
@@ -710,13 +716,13 @@ body {
   background: #fff;
   border: 1px solid #e335ff;
   border-radius: 20px;
-  padding: 32px 0;
+  padding: 3rem 0;
   width: 31%;
 }
 
 @media (max-width: 1100px) {
   .page-9 {
-    padding: 8.5rem 20px;
+    padding: 4rem 20px;
   }
 }
 
