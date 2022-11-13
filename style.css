@@ -485,6 +485,7 @@ body {
   box-shadow: 3px 4px 0 0 #e335ff;
   top: 44%;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .back-btn:hover {
