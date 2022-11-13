@@ -39,13 +39,13 @@ const tl1 = gsap.timeline({
   },
 });
 
-if (window.screen.width < 1000) {
+if (window.innerWidth > 1000) {
   tl1
     .to(".page-1-genie", {
       top: "40%",
     })
     .to(".page-1-genie", {
-      left: "20%",
+      left: "15%",
     });
 } else {
   tl1
@@ -58,6 +58,69 @@ if (window.screen.width < 1000) {
 }
 
 // Animation p2
+gsap.fromTo(
+  ".cursor1",
+  0,
+  {
+    visibility: "visible",
+  },
+  {
+    visibility: "hidden",
+    repeat: 3,
+    yoyo: true, // 若為true，則動畫repeat運行順序將會以倒放的形式回去，如溜溜球一樣
+    repeatDelay: 0.5, // 下一次repeat的delay時間
+  }
+);
+
+gsap.fromTo(
+  ".cursor2",
+  0,
+  {
+    visibility: "visible",
+  },
+  {
+    visibility: "hidden",
+    repeat: 3,
+    yoyo: true, // 若為true，則動畫repeat運行順序將會以倒放的形式回去，如溜溜球一樣
+    repeatDelay: 0.5, // 下一次repeat的delay時間
+  }
+);
+
+gsap.fromTo(
+  ".cursor3",
+  0,
+  {
+    visibility: "visible",
+    delay: 1.5,
+  },
+  {
+    visibility: "hidden",
+    repeat: -1,
+    yoyo: true, // 若為true，則動畫repeat運行順序將會以倒放的形式回去，如溜溜球一樣
+    repeatDelay: 0.5, // 下一次repeat的delay時間
+  }
+);
+
+// const tl2 = gsap.timeline();
+
+// tl2
+//   .to(".page-2-q1", {
+//     text: "羨慕別人的酷酷網頁動畫？",
+//     duration: 1.5,
+//     scrollTrigger: {
+//       trigger: ".page-2-q1",
+//       toggleActions: "play pause resume reset",
+//     },
+//   })
+//   .to(".page-2-q2", {
+//     text: "滿足不了同事的許願？",
+//     duration: 1.5,
+//   })
+//   .to(".page-2-q3", {
+//     text: "動畫技能樹太雜無從下手？",
+//     duration: 1.5,
+//   });
+
 gsap.to(".page-2-q1", {
   text: "羨慕別人的酷酷網頁動畫？",
   duration: 1.5,
