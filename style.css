@@ -357,23 +357,49 @@ body {
 }
 
 .cards {
+  border: 3px solid black;
   display: flex;
   margin-bottom: 88px;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .cards img {
   border-radius: 20px 20px 0 0;
+  width: 100%;
 }
 
 .card-1,
 .card-2,
 .card-3 {
-  margin: 10px;
+  margin-bottom: 2rem;
   border: 1px solid #e335ff;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 31%;
+}
+
+.card-1-back,
+.card-2-back,
+.card-3-back {
+  position: relative;
+  background: #f8cc46;
+}
+
+.card-1-back > *,
+.card-2-back > *,
+.card-3-back > * {
+  /* display: none; */
+  visibility: hidden;
+}
+
+.card-2-back {
+  background: #79eaee;
+}
+.card-3-back {
+  background: #895cdd;
 }
 
 .card-buttons {
@@ -386,9 +412,8 @@ body {
 .card-2-week,
 .card-3-week {
   background: #fff;
-  padding: 9px 24px;
+  padding: 8px 24px;
   border: 1px solid #f8cc46;
-  /* font-size: 1.5rem; */
 }
 
 .card-2-week {
@@ -407,7 +432,6 @@ body {
   padding: 8px 24px;
   border: none;
   margin-left: 10px;
-  /* font-size: 1.5rem; */
 }
 
 .card-2-topic {
@@ -434,9 +458,29 @@ body {
   padding: 16px;
 }
 
+.back-btn {
+  visibility: visible;
+  position: absolute;
+  background: #fff;
+  border: none;
+  padding: 1.8rem 2.7rem;
+  font-size: 2rem;
+  box-shadow: 3px 4px 0 0 #e335ff;
+  top: 44%;
+}
+
+.back-btn:hover {
+  background: #f9d1ff;
+}
+
 @media (max-width: 1100px) {
   .cards {
     flex-direction: column;
+  }
+  .card-1,
+  .card-2,
+  .card-3 {
+    width: 100%;
   }
 }
 
