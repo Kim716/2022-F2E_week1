@@ -692,21 +692,42 @@ body {
 .page-8 {
   position: relative;
   width: 100%;
+  /* height: 70vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
+.dynamic-font {
+  position: relative;
+  width: 100%;
+  /* height: 100%; */
+}
 .page-8-back {
   width: 100%;
-  margin-bottom: 8rem;
+  /* margin-bottom: 8rem; */
 }
 
-/* .half-circle {
-  height: 1200px;
+.section4 {
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  max-width: 100%;
+  max-height: 100%;
   background: #fff;
-  border: 1px solid #e335ff;
-  border-radius: 70% 70% 0 0;
-} */
+  /* height: 100vh; */
+}
+.loop {
+  display: inline-block;
+  font-family: "Dela Gothic One";
+  font-size: 10rem;
+  white-space: nowrap;
+  -webkit-text-stroke: 1.5px black;
+}
+
+.loop span {
+  color: transparent;
+}
 
 .circle-border,
 .circle-back {
@@ -755,6 +776,9 @@ body {
   .page-8-btn {
     padding: 10px 30px;
   }
+  .loop {
+    font-size: 8rem;
+  }
 }
 
 @media (max-width: 850px) {
@@ -774,6 +798,9 @@ body {
   .page-8-btn:hover {
     /* 使用 border 會移動到，outline 不會讓他動來動去 */
     outline: 5px solid #ffe79e;
+  }
+  .loop {
+    font-size: 6rem;
   }
 }
 /* 第九頁 */

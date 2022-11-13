@@ -226,3 +226,11 @@ gsap.utils.toArray(".cardCont").forEach(function (card) {
     tl.reverse();
   });
 });
+
+// Animation p8
+gsap.to(".loop", {
+  xPercent: "-30",
+  ease: "none",
+  duration: 10,
+  repeat: -1,
+});
