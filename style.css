@@ -357,11 +357,18 @@ body {
 }
 
 .cards {
-  border: 3px solid black;
+  /* border: 3px solid black; */
   display: flex;
   margin-bottom: 88px;
   flex-wrap: wrap;
   justify-content: space-between;
+  width: 90%;
+}
+
+.cardCont {
+  /* border: 5px solid blue; */
+  width: 31%;
+  position: relative;
 }
 
 .cards img {
@@ -372,26 +379,36 @@ body {
 .card-1,
 .card-2,
 .card-3 {
+  position: relative;
   margin-bottom: 2rem;
+  background: #fff;
   border: 1px solid #e335ff;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 31%;
+  width: 100%;
 }
 
 .card-1-back,
 .card-2-back,
 .card-3-back {
-  position: relative;
+  position: absolute;
   background: #f8cc46;
+  width: 100%;
+}
+
+.cardFront,
+.cardBack {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
 }
 
 .card-1-back > *,
 .card-2-back > *,
 .card-3-back > * {
-  /* display: none; */
   visibility: hidden;
 }
 

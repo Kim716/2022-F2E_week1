@@ -182,3 +182,47 @@ tl4
     },
     "<"
   );
+
+// Animation p5
+
+// one test
+/*
+// const card = document.querySelector(".cardCont");
+// gsap.set(".card-1-back", { rotationY: -180 });
+// const turnBack = gsap
+//   .timeline({ paused: true })
+//   .to(".card-1-front", { duration: 1, rotationY: 180 })
+//   .to(".card-1-back", { duration: 1, rotationY: 0 }, "<");
+
+// card.addEventListener("mouseenter", function () {
+//   console.log(1);
+//   turnBack.play();
+// });
+// card.addEventListener("mouseleave", function () {
+//   console.log(2);
+//   turnBack.reverse();
+// });
+*/
+gsap.utils.toArray(".cardCont").forEach(function (card) {
+  gsap.set(card, {
+    transformStyle: "preserve-3d",
+    transformPerspective: 1000,
+  });
+  const q = gsap.utils.selector(card);
+  const front = q(".cardFront");
+  const back = q(".cardBack");
+
+  gsap.set(back, { rotationY: -180 });
+
+  const tl = gsap
+    .timeline({ paused: true })
+    .to(front, { duration: 1, rotationY: 180 })
+    .to(back, { duration: 1, rotationY: 0 }, 0);
+
+  card.addEventListener("mouseenter", function () {
+    tl.play();
+  });
+  card.addEventListener("mouseleave", function () {
+    tl.reverse();
+  });
+});
