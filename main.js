@@ -66,7 +66,7 @@ gsap.fromTo(
   },
   {
     visibility: "hidden",
-    repeat: 3,
+    repeat: -1,
     yoyo: true, // 若為true，則動畫repeat運行順序將會以倒放的形式回去，如溜溜球一樣
     repeatDelay: 0.5, // 下一次repeat的delay時間
   }
@@ -80,7 +80,7 @@ gsap.fromTo(
   },
   {
     visibility: "hidden",
-    repeat: 3,
+    repeat: -1,
     yoyo: true, // 若為true，則動畫repeat運行順序將會以倒放的形式回去，如溜溜球一樣
     repeatDelay: 0.5, // 下一次repeat的delay時間
   }
@@ -101,6 +101,7 @@ gsap.fromTo(
   }
 );
 
+/*
 // const tl2 = gsap.timeline();
 
 // tl2
@@ -120,6 +121,7 @@ gsap.fromTo(
 //     text: "動畫技能樹太雜無從下手？",
 //     duration: 1.5,
 //   });
+*/
 
 gsap.to(".page-2-q1", {
   text: "羨慕別人的酷酷網頁動畫？",
@@ -149,3 +151,34 @@ gsap.to(".page-2-q3", {
     toggleActions: "play pause resume reset",
   },
 });
+
+// Animation p4
+const tl4 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".page-4-back",
+    markers: false,
+    start: "top 38%",
+    end: "top 5%",
+    scrub: true,
+  },
+});
+
+tl4
+  .from(".page-4-genie1", {
+    left: "-30%",
+  })
+  .from(
+    ".page-4-genie2",
+    {
+      left: "130%",
+    },
+    "<"
+  )
+  .from(
+    ".page-4-title",
+    {
+      top: "40%",
+      height: "27%",
+    },
+    "<"
+  );
